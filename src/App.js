@@ -1,11 +1,11 @@
-import Profile from "./components/Profile";
-import user from "./user.json";
-import Statistics from "./components/Statistics";
-import stats from "./statistical-data.json";
-import FriendsList from "./components/FriendList";
-import friends from "./friends.json";
-import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
-import transactions from "./transactions.json";
+import Profile from './components/Profile';
+import user from './props/user.json';
+import Statistics from './components/Statistics';
+import statisticalData from './props/statistical-data.json';
+import FriendsList from './components/FriendList';
+import friends from './props/friends.json';
+import TransactionHistory from './components/TransactionHistory/TransactionHistory';
+import transactions from './props/transactions.json';
 
 export default function App() {
   return (
@@ -17,7 +17,7 @@ export default function App() {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Statistics stats={stats} />
+      <Statistics stats={statisticalData} />
       <FriendsList friends={friends} />
       <TransactionHistory items={transactions} />
     </div>

@@ -1,0 +1,27 @@
+.statistics {
+    max-width: 300px;
+}
+/* .title */
+.stat-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    box-shadow: var(--box-shadow);
+    background-color: var(--background-color);
+}
+
+.stat-list .item {
+    width: calc(100% / 5);
+    padding: 5px;
+    text-align: center;
+    color: #ffff;
+}
+.stat-list .label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    
+}
+.stat-list .percentage {
+    display: block;
+}

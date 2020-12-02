@@ -1,14 +1,15 @@
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import "./FriendList.css";
 
-const FriendsList = ({friends }) =>
+const FriendsList = ({ friends }) =>
     <ul className="friend-list">
         {friends.map(friend =>
-        <li key={ friend.id} className="item">
-        <span className={ friend.isOnline ? "status is-online" : "status"}></span>
-        <img className="avatar" src={ friend.avatar} alt="" width="48" />
-        <p className="name">{ friend.name}</p></li>
+            <li key={friend.id} className="item">
+                <span className={friend.isOnline ? "status is-online" : "status"}></span>
+                <img className="avatar" src={friend.avatar} alt="" width="48" />
+                <p className="name">{friend.name}</p></li>
         )}
-    </ul>
+    </ul>;
 
 FriendsList.propTypes = {
     id: PropTypes.number,
@@ -16,6 +17,6 @@ FriendsList.propTypes = {
     avatar: PropTypes.string,
     name: PropTypes.string,
     friends: PropTypes.array
-}
+};
 
 export default FriendsList;

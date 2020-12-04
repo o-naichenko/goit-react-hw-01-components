@@ -1,14 +1,14 @@
 import PropTypes from 'prop-types';
 import "./Profile.css";
 import defaultImage from "../../images/default-user-image.png";
-import Stats from "./Stats";
+import ProfileStats from "../Profile-stats/Profile-stats";
 
 
 const Profile = ({
   name,
   tag,
   location,
-  avatar = defaultImage,
+  avatar,
   stats }) =>
   <div className="profile">
     <div className="description">
@@ -22,7 +22,7 @@ const Profile = ({
       <p className="tag">@{tag}</p>
       <p className="location">{location}</p>
     </div>
-    <Stats
+    <ProfileStats
       followers={stats.followers}
       views={stats.views}
       likes={stats.likes}

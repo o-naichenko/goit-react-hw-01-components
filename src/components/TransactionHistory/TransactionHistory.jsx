@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import Transaction from "./Transaction";
+import Transaction from "../Transaction/Transaction.jsx";
 import "./TransactionHistory.css";
 
 

@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Profile-stats.css";
 
 const Stats = ({ followers, views, likes }) =>
     <ul className="stats">

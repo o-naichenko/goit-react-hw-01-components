@@ -1,0 +1,13 @@
+.transaction-history thead {
+    background-color: pink;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid var(--grey-color);
+}
+
+tr:nth-child(2n) {
+    background-color: var(--grey-color);
+}
